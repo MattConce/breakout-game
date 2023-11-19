@@ -9,3 +9,5 @@
 This project is an implementation of the game Breakout. The implementation was entirely
 in javascript, html and css. For this, the HTML5 canvas with support for WebGl2 was used.
 To make the rendering of objects on the screen efficient, shaders were used.
+
+You can play here: https://mattconce.github.io/breakoutGame/index.html
