@@ -1,0 +1,51 @@
+<!-- 
+Author: Matheus Santos
+Date: 15/06/2021
+-->
+
+<html>
+
+<body>
+  <header class="header">
+    <meta charsett="UTF-8" />
+    <link rel="stylesheet" href="breakout.css" />
+    <link rel="stylesheet" type="text/css" <link href="https://fonts.googleapis.com/css?family=Press Start 2P"
+      rel="stylesheet" />
+    />
+    <script src="breakout.js" defer></script>
+    <script src="webglUtils.js" defer></script>
+    <div class="panel">
+      <img id="lives" src="./assets/lives3.png" width="170px" height="60px" />
+      <h2 id="level">LEVEL 1</h2>
+      <h2 id="score" class="score">SCORE: 0</h2>
+    </div>
+  </header>
+  <div class="main">
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <p id="msg">Game Over!!</p>
+      </div>
+    </div>
+    <div class="toolbar">
+      <button id="play" class="button play">Play</button>
+      <button id="debug" class="button debug">Debug</button>
+      <button id="clear" class="button clear">Clear</button>
+      <ul>
+        <li>Speed</li>
+        <li>
+          <input id="speed" class="range" type="range" min="3" max="7.5" step="0.5" value="3" />
+        </li>
+      </ul>
+      <ul>
+        <li>Size</li>
+        <li>
+          <input id="size" class="range" type="range" min="1" max="10" step="1" value="3" />
+        </li>
+      </ul>
+    </div>
+    <canvas id="canvas" class="game" width="1080" height="720"></canvas>
+  </div>
+</body>
+
+</html>
